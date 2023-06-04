@@ -1,4 +1,3 @@
-import logging
 import os
 import re
 import json
@@ -11,7 +10,6 @@ from paho.mqtt import client as mqtt_client
 from azure.storage.blob import BlobServiceClient
 
 load_dotenv()
-logging.getLogger().setLevel(logging.DEBUG)
 
 # Constants
 SERVICE_NAME = os.getenv("SERVICE_NAME")
